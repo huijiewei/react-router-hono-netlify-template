@@ -1,0 +1,10 @@
+{
+  "extends": "@resolid/config/tsconfig/react",
+  "include": [".react-router/types/**/*", "app/**/*", "react-router.config.ts", "vite.config.ts"],
+  "compilerOptions": {
+    "rootDirs": [".", "./.react-router/types"],
+    "paths": {
+      "~/*": ["./app/*"]
+    }
+  }
+}
